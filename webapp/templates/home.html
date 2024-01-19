@@ -1,0 +1,168 @@
+{% extends "base.html" %} {% block title %} Portfolio {% endblock %}
+{% load static %}
+{% block content %}
+
+  <div class="container-fluid" id="first-con">
+
+    <div class="container-fluid" id="intro-txt">
+      <div class="wrapper">
+        <div class="static-txt">print("</div>
+        <ul class="dynamic-txts">
+            <li><span>Hello</span></li>
+            <li><span>World</span></li>
+        </ul>
+        <div class="static-txt">")</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container-fluid" id="second-con">
+    
+    <div class="profile-box"> 
+      <div class="circle-profile"></div>
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+    </div>
+    
+    <div class="text-box">
+      <h2>Hi Roy here,</h2>
+      <br>
+      <div class="body-box">
+        <p>
+          Lorem ipsum dolor sit amet. Est dolores omnis cum fugit consequatur sit perferendis praesentium non 
+          galisum voluptas ut beatae voluptatema reprehenderit doloremque? Eum odit culpa sed voluptatem minima
+          non similique dolores. 33 nihil mollitia et facilis porro et minus dolorem et molestiae quas aut dolores 
+          molestias et facere voluptatem et voluptatem aspernatur.
+        </p>
+
+        
+      </div>
+      
+    </div>
+   
+ 
+  </div>
+
+  <!---->
+  <div class="container-fluid" id="third-con">
+    <p>SKILLS & PROJECTS</p>
+  </div>
+
+  <!---->
+  <div class="container-fluid" id="fourth-con">
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="slides" id="one">
+            <div class="image-con">
+              <div class="firstimgs">
+                <img src="{% static 'images/UIA2.png' %}" id="UIA2">
+                <img src="{% static 'images/UIA1.png' %}" id="UIA1">
+              </div>
+
+              <div class="firstimgs">
+                <img src="{% static 'images/UIB2.png' %}" id="UIB2">
+                <img src="{% static 'images/UIB1.png' %}" id="UIB1">
+              </div>
+            </div>
+            <div class="txt-con">
+              <div class="title-txt">
+                <h1>UI / UX Design</h1>
+              </div>
+              <div class="body-txt">
+                <p>em voluptatem itaque aut tempore dolores eum voluptatibus corrupti ea molestiae molestiae? Qui iste adipisci sed nisi dolores est eligendi veritatis et dolorum consectetur 33 voluptatem sequi.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="slides" id="two">
+            <div class="image-con">
+              <img src="{% static 'images/DC1.png' %}" id="DC1">
+              <img src="{% static 'images/DC2.png' %}" id="DC2">
+            </div>
+            <div class="txt-con">
+              <div class="title-txt">
+                <h1>Duck Counting App</h1>
+              </div>
+              <div class="body-txt">
+                <p>em voluptatem itaque aut tempore dolores eum voluptatibus corrupti ea molestiae molestiae? Qui iste adipisci sed nisi dolores est eligendi veritatis et dolorum consectetur 33 voluptatem sequi.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="slides" id="three">
+            <div class="image-con">
+              <img src="{% static 'images/game1.png' %}" id="game1">
+              <img src="{% static 'images/game2.png' %}" id="game2">
+            </div>
+            <div class="txt-con">
+              <div class="title-txt">
+                <h1>Game Development</h1>
+              </div>
+              <div class="body-txt">
+                <p>em voluptatem itaque aut tempore dolores eum voluptatibus corrupti ea molestiae molestiae? Qui iste adipisci sed nisi dolores est eligendi veritatis et dolorum consectetur 33 voluptatem sequi.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    
+  </div>
+
+  <!---->
+  <div class="container-fluid" id="fifth-con">
+
+    <div class="contact-con">
+      <div class="email-con">
+        <i class="fa-solid fa-envelope"></i>
+        <p>roypnarido@gmail.com</p>
+      </div>
+
+      <div class="line-con"></div>
+
+      <div class="num-con">
+        <i class="fa-solid fa-phone"></i>
+        <p>0927 720 7118</p>
+      </div>
+      
+      <div class="line-con"></div>
+
+      <div class="cv-con">
+        <i class="fa-solid fa-file-arrow-down"></i>
+        <p>Download CV</p>
+      </div>
+    </div>
+
+  <div class="bubbles" id="bubbles"></div>
+   
+  </div>
+
+  <script>
+    let clientwidth = document.body.clientWidth;
+    let maxBubbles = (clientwidth / 41);
+
+    var outputHTML = "";
+    let min = 10;
+    let max = 30;
+  
+    for (var i = 1; i < maxBubbles; i++) {
+      let randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+      outputHTML += "<span style='--i:" + randomNum + ";'></span>";
+    }
+  
+    document.getElementById("bubbles").innerHTML = outputHTML;
+  </script>
+  <!-- 
+    
+  -->
+{% endblock %}
