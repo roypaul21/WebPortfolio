@@ -20,7 +20,9 @@
   <div class="container-fluid" id="second-con">
     
     <div class="profile-box"> 
-      <div class="circle-profile"></div>
+      <img src="{% static 'images/profile2.png' %}" id="profile-img">  
+      <div class="circle-profile">
+      </div>
       <div class="circle1"></div>
       <div class="circle2"></div>
     </div>
@@ -30,10 +32,16 @@
       <br>
       <div class="body-box">
         <p>
-          Lorem ipsum dolor sit amet. Est dolores omnis cum fugit consequatur sit perferendis praesentium non 
-          galisum voluptas ut beatae voluptatema reprehenderit doloremque? Eum odit culpa sed voluptatem minima
-          non similique dolores. 33 nihil mollitia et facilis porro et minus dolorem et molestiae quas aut dolores 
-          molestias et facere voluptatem et voluptatem aspernatur.
+            A dedicated and recent Computer Science graduate with a passion for innovation and continuous learning. My journey in the dynamic 
+            realm of technology is not just a career path but a fascinating exploration, fueled by curiosity and inspired
+            by the incredible works of pioneers in the field. Equipped with a solid foundation in Computer Science, my goal is learn and adapt in 
+            order to contribute fresh perspectives and creative solutions to the ever-evolving landscape of technology. Venturing from web and app 
+            development to the immersive world of game development, I find joy in the intricacies of creating possible and efficient ways to integrate solution. 
+        </p>
+
+        <p>
+            The journey ahead in the realm of technology may present its challenges, but I firmly believe that, 
+            with the right environment and mindset, every difficulty transforms into a possibility waiting to be realized.
         </p>
 
         
@@ -57,7 +65,9 @@
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
       </div>
+
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="slides" id="one">
@@ -77,11 +87,12 @@
                 <h1>UI / UX Design</h1>
               </div>
               <div class="body-txt">
-                <p>em voluptatem itaque aut tempore dolores eum voluptatibus corrupti ea molestiae molestiae? Qui iste adipisci sed nisi dolores est eligendi veritatis et dolorum consectetur 33 voluptatem sequi.</p>
+                <p>Crafting seamless User Interface and captivating User Experience designs through the proficient use of Figma, Photoshop, and other design tools.</p>
               </div>
             </div>
           </div>
         </div>
+
         <div class="carousel-item">
           <div class="slides" id="two">
             <div class="image-con">
@@ -93,15 +104,19 @@
                 <h1>Duck Counting App</h1>
               </div>
               <div class="body-txt">
-                <p>em voluptatem itaque aut tempore dolores eum voluptatibus corrupti ea molestiae molestiae? Qui iste adipisci sed nisi dolores est eligendi veritatis et dolorum consectetur 33 voluptatem sequi.</p>
+                <p>A web-based software tool that uses machine learning, data structures, and image processing to help classify and count ducks in videos, images, or real-time.</p>
               </div>
             </div>
           </div>
         </div>
+
         <div class="carousel-item">
           <div class="slides" id="three">
             <div class="image-con">
-              <img src="{% static 'images/game1.png' %}" id="game1">
+              <div class="first-img">
+                <img src="{% static 'images/game3.png' %}" id="game3">
+                <img src="{% static 'images/game4.png' %}" id="game4">
+              </div>
               <img src="{% static 'images/game2.png' %}" id="game2">
             </div>
             <div class="txt-con">
@@ -109,11 +124,31 @@
                 <h1>Game Development</h1>
               </div>
               <div class="body-txt">
-                <p>em voluptatem itaque aut tempore dolores eum voluptatibus corrupti ea molestiae molestiae? Qui iste adipisci sed nisi dolores est eligendi veritatis et dolorum consectetur 33 voluptatem sequi.</p>
+                <p>Immersing in the world of game development, where creativity meets technology, I bring ideas to life with the help of Unity 
+                   and other tools turning virtual experiences into unforgettable adventures.
+                </p>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="carousel-item">
+            <div class="slides" id="four">
+              <div class="image-con">
+                <img src="{% static 'images/auto1.png' %}" id="auto1">
+                <img src="{% static 'images/auto2.png' %}" id="auto2">
+              </div>
+              <div class="txt-con">
+                <div class="title-txt">
+                  <h1>Automation System</h1>
+                </div>
+                <div class="body-txt">
+                  <p>Developing a QA automation scripts to run tests on the software that validating the functionality of software and ensures it meets requirements before being released into production.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+
       </div>
     </div> 
     
@@ -138,8 +173,8 @@
       <div class="line-con"></div>
 
       <div class="cv-con">
-        <i class="fa-solid fa-file-arrow-down"></i>
-        <p>Download CV</p>
+        <!--<i class="fa-solid fa-file-arrow-down"></i>-->
+        <p>Roy Paul Narido</p>
       </div>
     </div>
 
